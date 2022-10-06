@@ -1,0 +1,26 @@
+.mainDash{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+.menuIcon{
+    display: none;
+}
+@media screen and(max-width : 1200px){
+    .mainDash{
+        justify-self: flex-start;
+        margin-top: 2rem;
+    }   
+}
+@media screen and(max-width : 700px){
+    .mainDash{
+        align-items: center;
+    }   
+    .menuIcon{
+        display: block;
+        position: absolute;
+        top:2rem;
+        right: 2rem;
+    }
+}

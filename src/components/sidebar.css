@@ -1,0 +1,73 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    transition: all 300ms ease;
+    position: relative;
+    padding-top: 4rem;
+}
+.logo{
+    display: flex;
+    height:5rem;
+    font-weight: bold;
+    font-size: 22px;
+    gap:1rem;
+    align-items: center;
+    justify-content: center;
+    height:5%;
+}
+.logoImg{
+    height: 3rem;
+    width:3rem;
+}
+.logoTitle>span{
+    color:var(--pink )
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    gap:2rem;
+}
+.menuItem{
+    display: flex;
+    gap:0.6rem;
+    align-items: center;
+    margin-left: 2rem;
+    position: relative;
+    transition: all 300ms ease;
+    border-radius: 2rem;
+}
+.menuItem:hover{
+    cursor: pointer;
+}
+.singOut{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    margin-left: 2rem;
+}
+.active{
+    background:var(--activeItem);
+    margin-left:0;
+}
+.active::before{
+    content:'';
+    width:8px;
+    height:100%;
+    background: var(--pink);
+}
+@media screen and (max-width : 1200px){
+    .menuItem>span{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+}
+@media screen and (max-width : 500px){
+    .sidebar{
+        display: none;
+    }
+    
+}

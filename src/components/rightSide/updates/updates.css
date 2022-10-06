@@ -1,0 +1,32 @@
+.updates{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    gap:20px;
+}
+.updatesPage{
+    margin-top:25px;
+}
+.updatesContainer{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.updatesprofileimage{
+    height:80px;
+    width:80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.name{
+    font-weight: bold;
+}
+.time{
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

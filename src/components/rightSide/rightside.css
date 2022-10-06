@@ -1,0 +1,21 @@
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    pading:10px;
+}
+.updatesPage{
+    flex: 1;
+}
+.customerReview{
+    flex: 1;
+}
+@media screen and (max-width:1200px){
+    .rightSide{
+        justify-content: flex-start;
+        margin-top: 3rem;
+    }
+    .customerReview{
+        display: none;
+    }
+}
